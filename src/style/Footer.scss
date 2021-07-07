@@ -1,0 +1,170 @@
+@import url('http://fonts.cdnfonts.com/css/gunny-rewritten');
+
+.footer {
+    background-color: #333333;
+    .head-footer {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        img {
+            width: 250px;
+            align-self: flex-start;
+            margin-top: 25px;
+            margin-right: 40px;
+        }
+        .cont {
+            width: 900px;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            div {
+                ul {
+                    margin-top: 20px;
+                }
+            }
+            h1 {
+                width: 100%;
+                border-bottom: 1px solid rgb(146, 124, 28);
+                display: block;
+                margin-top: 30px;
+                height: 40px;
+                color: white;
+                font-family: 'Satisfy', cursive;
+
+            }
+            ul > a {
+                color: #aa8a61;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 20px;
+                &:hover {
+                    color: #e0e2e2;
+                }
+            }
+            ul {
+                margin-right: 150px;
+                li {
+                    margin-top: 5px;
+                }
+                li > a {
+                    font-size: 18px;
+                    color: #c6c7c7;
+                    text-decoration: none;
+                    font-size: 17px;
+                    &:hover {
+                        color: #aa8a61;
+                    }
+                }
+            }
+        }
+    }
+    .foot{
+        width: 80%;
+        height: 150px;
+        margin: 40px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        border-top: 1px solid #c6c7c7 ;
+        div{
+            width: 300px;
+            height: 40px;
+            margin-right: 10px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            i{
+                color: #c6c7c7;
+
+            }
+            span{
+                display: inline-block;
+                margin-left: 20px;
+                color: #c6c7c7;
+
+            }
+        }
+        
+        .icon-footer{
+            width: 90px;
+            text-align: right;
+            position: absolute;
+            right: 0;
+            
+            i{
+                font-size: 22px;
+                margin: 0 5px;
+            }
+            
+        }
+    }
+}
+
+@media (max-width:950px){
+    .footer{
+        .head-footer{
+            .cont{
+                width: 100%;
+                justify-content: center;
+                div{
+                    
+                    margin: 5px;
+                    ul{
+                        width: 200px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+             img{
+                 display: none;
+             }
+             
+        }
+    }
+}
+
+
+@media (max-width:950px){
+    .footer{
+        .foot{
+            width: 100%;
+            justify-content: space-evenly;
+            div{
+                width: 250px;
+                font-size: 14px;
+                justify-content: center;
+            }
+            .icon-footer{
+                width: 250px;
+                position: relative;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width:519px){
+    .footer{
+        .foot{
+            div{
+                justify-content: flex-start;
+            }
+            .icon-footer{
+                justify-content: flex-start;
+            }
+            
+        }
+        .head-footer{
+            .cont{
+                h1{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

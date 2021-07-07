@@ -1,0 +1,78 @@
+@import url('http://fonts.cdnfonts.com/css/gunny-rewritten');
+.items{
+    width: 100%;
+    background-image: url("../img/New/download.png");
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    .container{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        h1{
+            width: 100%;
+            font-family: 'Satisfy', cursive;
+            border-bottom: 1px solid #990000;
+            color: #990000;
+           margin: 50px 0 ;
+           padding: 10px 0;
+
+        }
+    }
+    .item{
+        border: 1px solid black;
+        margin: 15px 30px;
+        position: relative;
+        &:hover{
+            transform: scale(1.1);
+            transition: .5s;
+            cursor: pointer;
+        }
+        .img{
+            width: 360px;height: 360px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .linear{
+            height: 50px;
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+            text-align: center;
+            line-height: 50px;
+            font-size: 30px;
+            font-family: 'Gunny Rewritten', sans-serif;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width:1205px){
+    .items{
+        .container{
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width:1050px){
+    .items{
+        .container{
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width:400px){
+    .items{
+        .container{
+            .item{
+                width: 300px;
+                margin: 15px auto;
+                .img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
